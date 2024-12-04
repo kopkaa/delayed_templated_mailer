@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <style>
+      body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin:
+      0; padding: 0; } .email-container { background-color: #ffffff; max-width:
+      600px; margin: 20px auto; padding: 20px; border: 1px solid #e0e0e0;
+      border-radius: 8px; text-align: center; } .email-header { font-size: 24px;
+      font-weight: bold; color: #333333; margin-bottom: 10px; } .email-subheader
+      { font-size: 18px; color: #555555; margin-bottom: 20px; } .email-body {
+      font-size: 16px; color: #333333; margin-bottom: 20px; } .email-link {
+      color: #007bff; text-decoration: none; font-weight: bold; } .email-footer
+      { font-size: 14px; color: #888888; margin-top: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        IceWarp Cloud Trial expires in
+        {{days}}
+        days
+      </div>
+      <div class="email-body">
+        Hi
+        {{name}},
+        <br /><br />
+        This is to inform you that your IceWarp Cloud Trial will expire in
+        {{days}}
+        days. To learn how to convert it to production deployment, please
+        <a href="{{link.url}}" class="email-link">{{link.label}}</a>.
+      </div>
+      <div class="email-footer">
+        Kind regards,
+        <br />
+        Your IceWarp team
+      </div>
+    </div>
+  </body>
+</html>

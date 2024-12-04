@@ -1,0 +1,20 @@
+{
+  "queue": [
+    {
+      "key": "trial_expires",
+      "subject": "Your trial period is about to expire DELAYED",
+      "delayed_send": "2024-12-04T22:32:00Z",
+      "body_data": {
+        "name": "John Doe",
+        "days": 3,
+        "link": {
+          "label": "Extend Your Trial",
+          "url": "https://example.com/extend-trial"
+        }
+      },
+      "email": [
+        "cumlikator1@gmail.com"
+      ]
+    }
+  ]
+}

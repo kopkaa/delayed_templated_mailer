@@ -29,11 +29,12 @@ export class MailService {
 
   public async sendMail(data: MailRequestBody): Promise<void> {
     const html = compileTemplate(data.key, data.body_data);
-    await this.transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: data.email,
-      subject: data.subject,
-      html,
-    });
+    console.log('Compiled HTML: \n', html)
+    // await this.transporter.sendMail({
+    //   from: process.env.SMTP_USER,
+    //   to: data.email,
+    //   subject: data.subject,
+    //   html,
+    // });
   }
 }

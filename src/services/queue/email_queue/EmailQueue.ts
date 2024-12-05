@@ -4,6 +4,7 @@ import { MailService } from "../../mail.service";
 
 export class EmailQueue extends LowDBQueue<MailRequestBody> {
   private mailService: MailService;
+  private WAIT_FOR_NEXT_CHECK_MS = 1000
 
   constructor(fileName: string) {
     super(fileName);
@@ -53,6 +54,6 @@ export class EmailQueue extends LowDBQueue<MailRequestBody> {
 
 
   private async waitForNextCheck(): Promise<void> {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, this.WAIT_FOR_NEXT_CHECK_MS));
   }
 }

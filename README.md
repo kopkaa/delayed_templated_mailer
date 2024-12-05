@@ -1,9 +1,12 @@
-# Request Logger API
+# Delayed templated mailer
 
-A simple Express-based project with middleware to log incoming HTTP requests to a log file in the `/logs` directory. Logs include details such as method, URL, IP address, headers, and request/response metadata.
+This application is a REST API designed to handle email notification requests. It processes and queues emails based on specified parameters, offering features such as delayed sending and customizable email templates.
 
----
-
+Features:
+- Supports multiple email templates (for this task, one template is used).
+- Prepares the email and adds it to a queue for sending.
+- Handles both immediate and delayed email queuing.
+- Logs details of every incoming request to a log file for audit and debugging purposes.
 
 ## Requirements
 

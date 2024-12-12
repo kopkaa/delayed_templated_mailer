@@ -19,8 +19,8 @@ Features:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-name/request-logger.git
-   cd request-logger
+   git clone https://github.com/kopkaa/delayed_templated_mailer.git
+   cd delayed_templated_mailer
 
 2. Install dependencies
    ```js 
